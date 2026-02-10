@@ -110,10 +110,7 @@ function loadGalleryImages() {
         'M3.jpg',
         'M4.jpg',
         'M5.jpg',
-        'M6.jpg',
-        'M7.jpg',
-        'M8.jpg',
-        'M9.jpg'
+        'M6.jpg'
         // Add more if you have: 'M4.jpg', 'M5.jpg', etc.
     ];
     
