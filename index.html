@@ -3,212 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moeez & Hania | Wedding Celebration</title>
+    <title>Congratulations Moeez & Hania | A Celebration of Love</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/wedding.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
 </head>
 <body>
+    <!-- Animated Background Elements -->
+    <div class="bg-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <span class="logo-icon">💍</span>
+                <div class="logo-symbol">
+                    <span class="logo-m">M</span>
+                    <span class="logo-heart">❤️</span>
+                    <span class="logo-h">H</span>
+                </div>
                 <span class="logo-text">Moeez & Hania</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#story">Story</a></li>
-                <li><a href="#gallery">Photos</a></li>
-                <li><a href="#invitation" id="invitationBtn">Invitation</a></li>
-                <li><a href="#wishes">Wishes</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#celebration" class="nav-link">Celebration</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#wishes" class="nav-link">Wishes</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-actions">
+                <button class="nav-btn" id="celebrateBtn">
+                    <i class="fas fa-sparkles"></i> Celebrate
+                </button>
+            </div>
+            <div class="mobile-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h4 class="hero-subtitle">Celebrating Love & Togetherness</h4>
-                <h1 class="hero-title">Moeez & Hania</h1>
-                <p class="hero-date">February 12, 2026</p>
-                <p class="hero-quote">"In every photograph, a story. In every story, a lifetime."</p>
-                <div class="hero-buttons">
-                    <button class="cta-button" id="viewInvitationBtn">
-                        <i class="fas fa-envelope"></i> View Invitation
-                    </button>
-                    <a href="#gallery" class="secondary-button">
-                        <i class="fas fa-images"></i> View Photos
-                    </a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-text">Congratulations</span>
+                    <div class="badge-line"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Moeez</span>
+                    <span class="title-ampersand">&</span>
+                    <span class="title-line">Hania</span>
+                </h1>
+                <p class="hero-subtitle">On Your Beautiful Union</p>
+                <p class="hero-quote">"Two souls, one heart, a lifetime of shared moments captured through the lens of love"</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">02.12.2026</span>
+                        <span class="stat-label">Wedding Day</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">❤️</span>
+                        <span class="stat-label">Forever Begins</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-frame">
+                    <div class="frame-decoration"></div>
+                    <div class="frame-content">
+                        <!-- This will show a rotating display of images -->
+                        <div class="image-display" id="imageDisplay">
+                            <!-- Images will be loaded here -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
+            <div class="indicator-line"></div>
         </div>
     </section>
 
-    <!-- Their Story Section -->
-    <section id="story" class="story">
+    <!-- Celebration Section -->
+    <section id="celebration" class="celebration">
         <div class="container">
-            <h2 class="section-title">Their Beautiful Journey</h2>
-            <div class="story-container">
-                <div class="story-card">
-                    <div class="story-icon">
-                        <i class="fas fa-camera"></i>
+            <div class="section-header">
+                <h2 class="section-title">A Celebration of Love</h2>
+                <p class="section-subtitle">Honoring the union of two creative souls</p>
+            </div>
+            <div class="celebration-grid">
+                <div class="celebration-card">
+                    <div class="card-icon">
+                        <i class="fas fa-camera-retro"></i>
                     </div>
-                    <h3>The Photographer</h3>
-                    <p>Moeez Imran - Electrical Engineer turned creative visionary. Founder of MUDA co., capturing life's precious moments.</p>
-                    <div class="stats">
-                        <p><i class="fab fa-instagram"></i> 3,379 followers</p>
-                        <p><i class="fas fa-image"></i> 210 posts</p>
-                    </div>
+                    <h3>The Visionary</h3>
+                    <p>Moeez Imran - Where engineering precision meets artistic vision. 210 posts, 3,379 followers, countless moments captured.</p>
+                    <a href="https://instagram.com/moeez.imran" target="_blank" class="card-link">
+                        <i class="fab fa-instagram"></i> @moeez.imran
+                    </a>
                 </div>
-                <div class="story-card">
-                    <div class="story-icon">
+                <div class="celebration-card">
+                    <div class="card-icon">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Love Story</h3>
-                    <p>Two creative souls found harmony. A beautiful journey documented through Moeez's own lens.</p>
+                    <h3>The Union</h3>
+                    <p>Hania & Moeez - A partnership that blends creativity, passion, and shared dreams into a beautiful life tapestry.</p>
+                    <div class="card-tag">#MoeezHania2026</div>
                 </div>
-                <div class="story-card">
-                    <div class="story-icon">
+                <div class="celebration-card">
+                    <div class="card-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-                    <h3>MUDA co.</h3>
-                    <p>Leading content agency with 29.1K followers. Creating digital marketing magic for brands.</p>
+                    <h3>The Legacy</h3>
+                    <p>MUDA co. - 29.1K followers strong. A testament to creative excellence and entrepreneurial spirit.</p>
+                    <a href="https://instagram.com/mudaco_" target="_blank" class="card-link">
+                        <i class="fas fa-building"></i> @mudaco_
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Photo Gallery Section -->
+    <!-- Journey Timeline -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Their Journey</h2>
+                <p class="section-subtitle">From individual paths to a shared destiny</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>The Photographer's Eye</h3>
+                        <p>Electrical engineer by degree, visual storyteller by passion. Moeez's journey through @moeez.imran</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Creative Enterprise</h3>
+                        <p>Founding MUDA co. - Building a brand with 29.1K followers and industry recognition</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Hearts Align</h3>
+                        <p>Two creative paths converge. A love story written in light, shadow, and shared vision</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>New Chapter</h3>
+                        <p>February 12, 2026 - The beginning of a lifelong partnership and creative collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <h2 class="section-title">Wedding Moments</h2>
-            <p class="section-subtitle">Beautiful memories from the celebrations</p>
-            
-            <div class="gallery-grid" id="galleryGrid">
-                <!-- Images will be loaded here from images folder -->
-                <div class="loading">
-                    <div class="spinner"></div>
-                    <p>Loading beautiful moments...</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Visual Memories</h2>
+                <p class="section-subtitle">Moments captured, memories preserved</p>
             </div>
-            
-            <div class="social-links">
-                <a href="https://instagram.com/moeez.imran" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i> @moeez.imran
-                </a>
-                <a href="https://instagram.com/mudaco_" target="_blank" class="social-link">
-                    <i class="fas fa-briefcase"></i> @mudaco_
-                </a>
+            <div class="gallery-controls">
+                <button class="gallery-btn active" data-filter="all">All</button>
+                <button class="gallery-btn" data-filter="celebration">Celebration</button>
+                <button class="gallery-btn" data-filter="moments">Moments</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be loaded here -->
+                <div class="gallery-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading beautiful memories...</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Invitation Card Modal -->
-    <div id="invitationModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="invitation-card">
-                <div class="invitation-header">
-                    <h2>Mr. and Mrs. Tanvir</h2>
-                    <p class="invitation-subtitle">cordially invite you to celebrate the wedding of</p>
-                </div>
-                
-                <div class="couple-names">
-                    <h1>Hania</h1>
-                    <div class="and-symbol">
-                        <i class="fas fa-heart"></i>
-                        <span>&</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h1>Moeez</h1>
-                </div>
-                
-                <div class="invitation-details">
-                    <div class="detail-item">
-                        <i class="far fa-calendar-alt"></i>
-                        <div>
-                            <h3>Thursday</h3>
-                            <p>12th February 2026</p>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="far fa-clock"></i>
-                        <div>
-                            <h3>Timings</h3>
-                            <p>Starts: 6:00 PM</p>
-                            <p>Dinner: 7:30 PM</p>
-                        </div>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Venue</h3>
-                            <p>Grand Desire Marquee J5 Resort</p>
-                            <p>Gate #2, Jatti Umrah Road, near Adda Plot</p>
-                            <p>Raiwind Road, Lahore, Pakistan</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="invitation-footer">
-                    <p>"Your presence will make our day even more special"</p>
-                    <div class="rsvp-note">
-                        <p>With warmest regards,</p>
-                        <p>The Tanvir Family</p>
-                    </div>
-                </div>
-                
-                <div class="invitation-actions">
-                    <button class="print-btn" onclick="printInvitation()">
-                        <i class="fas fa-print"></i> Print Invitation
-                    </button>
-                    <button class="save-btn" id="saveInvitationBtn">
-                        <i class="fas fa-download"></i> Save Date
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Wishes Section -->
     <section id="wishes" class="wishes">
         <div class="container">
-            <h2 class="section-title">Heartfelt Wishes</h2>
-            <div class="wishes-container" id="wishesContainer">
-                <div class="wish-card">
-                    <div class="wish-content">
-                        <p class="wish-text">"To the most creative couple I know! May your life together be filled with beautiful frames of love and happiness."</p>
-                        <p class="wish-author">- A Well Wisher</p>
+            <div class="section-header">
+                <h2 class="section-title">Heartfelt Congratulations</h2>
+                <p class="section-subtitle">Messages of love and good wishes</p>
+            </div>
+            <div class="wishes-container">
+                <div class="wish-card featured">
+                    <div class="wish-header">
+                        <div class="wish-icon">🎉</div>
+                        <div class="wish-meta">
+                            <h4>Congratulations!</h4>
+                            <span class="wish-time">Today</span>
+                        </div>
                     </div>
+                    <p class="wish-text">"To Moeez & Hania - May your life together be as beautifully composed as the photographs you create. Wishing you endless frames of happiness."</p>
                 </div>
                 <div class="wish-card">
-                    <div class="wish-content">
-                        <p class="wish-text">"Though miles keep me from being there in person, my heart celebrates with you both on this beautiful journey."</p>
-                        <p class="wish-author">- From Afar</p>
+                    <div class="wish-header">
+                        <div class="wish-icon">✨</div>
+                        <div class="wish-meta">
+                            <h4>Creative Souls</h4>
+                            <span class="wish-time">Today</span>
+                        </div>
                     </div>
+                    <p class="wish-text">"Though distance keeps me from celebrating with you, my heart shares in your joy. May your creative partnership flourish."</p>
                 </div>
             </div>
             
-            <div class="add-wish">
-                <h3>Add Your Wish</h3>
-                <textarea id="wishText" placeholder="Write your heartfelt wish for Moeez & Hania..."></textarea>
-                <button id="submitWishBtn" class="submit-wish-btn">
-                    <i class="fas fa-paper-plane"></i> Send Your Wish
+            <div class="wish-form">
+                <h3>Add Your Congratulations</h3>
+                <div class="form-group">
+                    <textarea id="wishMessage" placeholder="Share your heartfelt message for the couple..." rows="4"></textarea>
+                </div>
+                <button id="submitWish" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Your Wishes
                 </button>
             </div>
         </div>
@@ -218,23 +242,60 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>Moeez & Hania</h2>
-                    <p>February 12, 2026</p>
+                <div class="footer-brand">
+                    <div class="footer-logo">M&H</div>
+                    <p class="footer-tagline">A Celebration of Creative Love</p>
                 </div>
-                <div class="footer-text">
-                    <p>Created with ❤️ for a special couple</p>
-                    <p>Though miles apart, hearts celebrate together</p>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/moeez.imran" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Personal</span>
+                        </a>
+                        <a href="https://instagram.com/mudaco_" target="_blank" class="social-link">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Professional</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <h4>Celebration</h4>
+                    <p>February 12, 2026</p>
+                    <p>Lahore, Pakistan</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© <span id="currentYear"></span> Wedding Surprise | All rights reserved</p>
+                <p>Created with ❤️ to celebrate Moeez & Hania's union</p>
+                <p class="copyright">© 2026 Celebrating M&H | All Visuals Courtesy of Moeez Imran</p>
             </div>
         </div>
     </footer>
 
-    <!-- Confetti Canvas -->
-    <canvas id="confettiCanvas"></canvas>
+    <!-- Celebration Modal -->
+    <div class="celebration-modal" id="celebrationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎊 Congratulations!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="confetti-effect"></div>
+                <p class="modal-text">Celebrating the beautiful union of Moeez & Hania!</p>
+                <button class="modal-action" id="toastBtn">
+                    <i class="fas fa-glass-cheers"></i> Raise a Virtual Toast
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-glass-cheers"></i>
+            <span>Cheers to Moeez & Hania! 🥂</span>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
